@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class summation {
+    public static void main(String[] args) {
+        /* 需求：
+
+	键盘录入一个三位数，求这个三位数每一位的数字和。
+
+        举例：
+
+	键盘录入123。那么每一位数字相加为：1 + 2 + 3，和为：6。*/
+
+        //用户输入前先定义好变量
+        Scanner sc= new Scanner(System.in);
+
+        //让用户输入
+        int num= sc.nextInt();
+
+        //先储存各个数字，再对数字取模
+        int Ge,Shi,Bai;
+        Bai=num/100%10;
+        Shi=num/10%10;
+        Ge=num%10;
+
+        int HE=Ge+Shi+Bai;
+        System.out.println(HE);
+
+
+    }
+}
